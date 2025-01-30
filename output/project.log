@@ -1,0 +1,182 @@
+2025-01-30 19:35:31,181 - main_logger - INFO - 🚀 Démarrage de l'analyse des fichiers...
+2025-01-30 19:35:31,182 - utils_logger - INFO - [INFO] Début du traitement de : EdStatsCountry
+2025-01-30 19:35:31,183 - src.data_loader - INFO - Chargement des données depuis data/raw/EdStatsCountry.csv
+2025-01-30 19:35:31,215 - src.data_loader - INFO - Données chargées avec succès : 241 lignes, 32 colonnes
+2025-01-30 19:35:31,322 - utils_logger - INFO - [INFO] Données chargées avec succès pour EdStatsCountry. Aperçu :
+  Country Code   Short Name   Table Name                     Long Name 2-alpha code  ... Latest agricultural census Latest industrial data Latest trade data Latest water withdrawal data Unnamed: 31
+0          ABW        Aruba        Aruba                         Aruba           AW  ...                        NaN                    NaN            2012.0                          NaN         NaN
+1          AFG  Afghanistan  Afghanistan  Islamic State of Afghanistan           AF  ...                    2013/14                    NaN            2012.0                         2000         NaN
+2          AGO       Angola       Angola   People's Republic of Angola           AO  ...                       2015                    NaN               NaN                         2005         NaN
+3          ALB      Albania      Albania           Republic of Albania           AL  ...                       2012                 2010.0            2012.0                         2006         NaN
+4          AND      Andorra      Andorra       Principality of Andorra           AD  ...                        NaN                    NaN            2006.0                          NaN         NaN
+
+[5 rows x 32 columns]
+2025-01-30 19:35:31,322 - src.missing_values - INFO - Analyse des valeurs manquantes commencée.
+2025-01-30 19:35:31,332 - src.missing_values - INFO - Résultats des valeurs manquantes sauvegardés dans : output/EdStatsCountry_missing_values.csv
+2025-01-30 19:35:31,333 - src.missing_values - INFO - Génération de la heatmap des valeurs manquantes dans : output/EdStatsCountry_missing_values_heatmap.png
+2025-01-30 19:35:32,450 - src.missing_values - INFO - Heatmap sauvegardée dans : output/EdStatsCountry_missing_values_heatmap.png
+2025-01-30 19:35:32,450 - src.missing_values - INFO - Analyse des valeurs manquantes terminée.
+2025-01-30 19:35:32,460 - utils_logger - INFO - [INFO] Rapport des valeurs manquantes pour EdStatsCountry :
+                                             Colonnes  Nombre de valeurs manquantes  Pourcentage de valeurs manquantes (%)
+0                                        Country Code                             0                               0.000000
+1                                          Short Name                             0                               0.000000
+2                                          Table Name                             0                               0.000000
+3                                           Long Name                             0                               0.000000
+4                                        2-alpha code                             3                               1.244813
+5                                       Currency Unit                            26                              10.788382
+6                                       Special Notes                            96                              39.834025
+7                                              Region                            27                              11.203320
+8                                        Income Group                            27                              11.203320
+9                                           WB-2 code                             1                               0.414938
+10                        National accounts base year                            36                              14.937759
+11                   National accounts reference year                           209                              86.721992
+12                                SNA price valuation                            44                              18.257261
+13                                   Lending category                            97                              40.248963
+14                                       Other groups                           183                              75.933610
+15                        System of National Accounts                            26                              10.788382
+16                      Alternative conversion factor                           194                              80.497925
+17                                    PPP survey year                            96                              39.834025
+18                  Balance of Payments Manual in use                            60                              24.896266
+19                     External debt Reporting status                           117                              48.547718
+20                                    System of trade                            41                              17.012448
+21                      Government Accounting concept                            80                              33.195021
+22                    IMF data dissemination standard                            60                              24.896266
+23                           Latest population census                            28                              11.618257
+24                            Latest household survey                           100                              41.493776
+25  Source of most recent Income and expenditure data                            81                              33.609959
+26                        Vital registration complete                           130                              53.941909
+27                         Latest agricultural census                            99                              41.078838
+28                             Latest industrial data                           134                              55.601660
+29                                  Latest trade data                            56                              23.236515
+30                       Latest water withdrawal data                            62                              25.726141
+31                                        Unnamed: 31                           241                             100.000000
+2025-01-30 19:35:32,468 - utils_logger - INFO - [INFO] Fin du traitement pour EdStatsCountry.
+
+2025-01-30 19:35:32,474 - utils_logger - INFO - [INFO] Début du traitement de : EdStatsCountry-Series
+2025-01-30 19:35:32,493 - src.data_loader - INFO - Chargement des données depuis data/raw/EdStatsCountry-Series.csv
+2025-01-30 19:35:32,503 - src.data_loader - INFO - Données chargées avec succès : 613 lignes, 4 colonnes
+2025-01-30 19:35:32,556 - utils_logger - INFO - [INFO] Données chargées avec succès pour EdStatsCountry-Series. Aperçu :
+  CountryCode         SeriesCode                                        DESCRIPTION  Unnamed: 3
+0         ABW        SP.POP.TOTL  Data sources : United Nations World Population...         NaN
+1         ABW        SP.POP.GROW  Data sources: United Nations World Population ...         NaN
+2         AFG        SP.POP.GROW  Data sources: United Nations World Population ...         NaN
+3         AFG  NY.GDP.PCAP.PP.CD                 Estimates are based on regression.         NaN
+4         AFG        SP.POP.TOTL  Data sources : United Nations World Population...         NaN
+2025-01-30 19:35:32,559 - src.missing_values - INFO - Analyse des valeurs manquantes commencée.
+2025-01-30 19:35:32,572 - src.missing_values - INFO - Résultats des valeurs manquantes sauvegardés dans : output/EdStatsCountry-Series_missing_values.csv
+2025-01-30 19:35:32,575 - src.missing_values - INFO - Génération de la heatmap des valeurs manquantes dans : output/EdStatsCountry-Series_missing_values_heatmap.png
+2025-01-30 19:35:33,142 - src.missing_values - INFO - Heatmap sauvegardée dans : output/EdStatsCountry-Series_missing_values_heatmap.png
+2025-01-30 19:35:33,144 - src.missing_values - INFO - Analyse des valeurs manquantes terminée.
+2025-01-30 19:35:33,158 - utils_logger - INFO - [INFO] Rapport des valeurs manquantes pour EdStatsCountry-Series :
+      Colonnes  Nombre de valeurs manquantes  Pourcentage de valeurs manquantes (%)
+0  CountryCode                             0                                    0.0
+1   SeriesCode                             0                                    0.0
+2  DESCRIPTION                             0                                    0.0
+3   Unnamed: 3                           613                                  100.0
+2025-01-30 19:35:33,163 - utils_logger - INFO - [INFO] Fin du traitement pour EdStatsCountry-Series.
+
+2025-01-30 19:35:33,166 - utils_logger - INFO - [INFO] Début du traitement de : EdStatsData
+2025-01-30 19:35:33,167 - src.data_loader - INFO - Chargement des données depuis data/raw/EdStatsData.csv
+2025-01-30 19:35:43,574 - src.data_loader - INFO - Données chargées avec succès : 886930 lignes, 70 colonnes
+2025-01-30 19:35:43,766 - utils_logger - INFO - [INFO] Données chargées avec succès pour EdStatsData. Aperçu :
+  Country Name Country Code                                     Indicator Name  Indicator Code       1970       1971       1972       1973       1974  ...  2065  2070  2075  2080  2085  2090  2095  2100  Unnamed: 69
+0   Arab World          ARB  Adjusted net enrolment rate, lower secondary, ...      UIS.NERA.2        NaN        NaN        NaN        NaN        NaN  ...   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN          NaN
+1   Arab World          ARB  Adjusted net enrolment rate, lower secondary, ...    UIS.NERA.2.F        NaN        NaN        NaN        NaN        NaN  ...   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN          NaN
+2   Arab World          ARB  Adjusted net enrolment rate, lower secondary, ...  UIS.NERA.2.GPI        NaN        NaN        NaN        NaN        NaN  ...   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN          NaN
+3   Arab World          ARB  Adjusted net enrolment rate, lower secondary, ...    UIS.NERA.2.M        NaN        NaN        NaN        NaN        NaN  ...   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN          NaN
+4   Arab World          ARB  Adjusted net enrolment rate, primary, both sex...     SE.PRM.TENR  54.822121  54.894138  56.209438  57.267109  57.991138  ...   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN          NaN
+
+[5 rows x 70 columns]
+2025-01-30 19:35:43,768 - src.missing_values - INFO - Analyse des valeurs manquantes commencée.
+2025-01-30 19:35:44,303 - src.missing_values - INFO - Résultats des valeurs manquantes sauvegardés dans : output/EdStatsData_missing_values.csv
+2025-01-30 19:35:44,304 - src.missing_values - INFO - Génération de la heatmap des valeurs manquantes dans : output/EdStatsData_missing_values_heatmap.png
+2025-01-30 19:37:44,012 - src.missing_values - INFO - Heatmap sauvegardée dans : output/EdStatsData_missing_values_heatmap.png
+2025-01-30 19:37:44,033 - src.missing_values - INFO - Analyse des valeurs manquantes terminée.
+2025-01-30 19:37:44,162 - utils_logger - INFO - [INFO] Rapport des valeurs manquantes pour EdStatsData :
+          Colonnes  Nombre de valeurs manquantes  Pourcentage de valeurs manquantes (%)
+0     Country Name                             0                               0.000000
+1     Country Code                             0                               0.000000
+2   Indicator Name                             0                               0.000000
+3   Indicator Code                             0                               0.000000
+4             1970                        814642                              91.849639
+..             ...                           ...                                    ...
+65            2085                        835494                              94.200670
+66            2090                        835494                              94.200670
+67            2095                        835494                              94.200670
+68            2100                        835494                              94.200670
+69     Unnamed: 69                        886930                             100.000000
+
+[70 rows x 3 columns]
+2025-01-30 19:37:44,168 - utils_logger - INFO - [INFO] Fin du traitement pour EdStatsData.
+
+2025-01-30 19:37:44,579 - utils_logger - INFO - [INFO] Début du traitement de : EdStatsFootNote
+2025-01-30 19:37:44,581 - src.data_loader - INFO - Chargement des données depuis data/raw/EdStatsFootNote.csv
+2025-01-30 19:37:45,184 - src.data_loader - INFO - Données chargées avec succès : 643638 lignes, 5 colonnes
+2025-01-30 19:37:45,195 - utils_logger - INFO - [INFO] Données chargées avec succès pour EdStatsFootNote. Aperçu :
+  CountryCode      SeriesCode    Year          DESCRIPTION  Unnamed: 4
+0         ABW  SE.PRE.ENRL.FE  YR2001  Country estimation.         NaN
+1         ABW  SE.TER.TCHR.FE  YR2005  Country estimation.         NaN
+2         ABW  SE.PRE.TCHR.FE  YR2000  Country estimation.         NaN
+3         ABW  SE.SEC.ENRL.GC  YR2004  Country estimation.         NaN
+4         ABW     SE.PRE.TCHR  YR2006  Country estimation.         NaN
+2025-01-30 19:37:45,196 - src.missing_values - INFO - Analyse des valeurs manquantes commencée.
+2025-01-30 19:37:45,394 - src.missing_values - INFO - Résultats des valeurs manquantes sauvegardés dans : output/EdStatsFootNote_missing_values.csv
+2025-01-30 19:37:45,395 - src.missing_values - INFO - Génération de la heatmap des valeurs manquantes dans : output/EdStatsFootNote_missing_values_heatmap.png
+2025-01-30 19:37:51,722 - src.missing_values - INFO - Heatmap sauvegardée dans : output/EdStatsFootNote_missing_values_heatmap.png
+2025-01-30 19:37:51,723 - src.missing_values - INFO - Analyse des valeurs manquantes terminée.
+2025-01-30 19:37:51,732 - utils_logger - INFO - [INFO] Rapport des valeurs manquantes pour EdStatsFootNote :
+      Colonnes  Nombre de valeurs manquantes  Pourcentage de valeurs manquantes (%)
+0  CountryCode                             0                                    0.0
+1   SeriesCode                             0                                    0.0
+2         Year                             0                                    0.0
+3  DESCRIPTION                             0                                    0.0
+4   Unnamed: 4                        643638                                  100.0
+2025-01-30 19:37:51,736 - utils_logger - INFO - [INFO] Fin du traitement pour EdStatsFootNote.
+
+2025-01-30 19:37:51,754 - utils_logger - INFO - [INFO] Début du traitement de : EdStatsSeries
+2025-01-30 19:37:51,755 - src.data_loader - INFO - Chargement des données depuis data/raw/EdStatsSeries.csv
+2025-01-30 19:37:51,916 - src.data_loader - INFO - Données chargées avec succès : 3665 lignes, 21 colonnes
+2025-01-30 19:37:51,982 - utils_logger - INFO - [INFO] Données chargées avec succès pour EdStatsSeries. Aperçu :
+           Series Code       Topic                                     Indicator Name                                   Short definition  ... Other web links  Related indicators License Type Unnamed: 20
+0  BAR.NOED.1519.FE.ZS  Attainment  Barro-Lee: Percentage of female population age...  Percentage of female population age 15-19 with...  ...             NaN                 NaN          NaN         NaN
+1     BAR.NOED.1519.ZS  Attainment  Barro-Lee: Percentage of population age 15-19 ...  Percentage of population age 15-19 with no edu...  ...             NaN                 NaN          NaN         NaN
+2  BAR.NOED.15UP.FE.ZS  Attainment  Barro-Lee: Percentage of female population age...  Percentage of female population age 15+ with n...  ...             NaN                 NaN          NaN         NaN
+3     BAR.NOED.15UP.ZS  Attainment  Barro-Lee: Percentage of population age 15+ wi...  Percentage of population age 15+ with no educa...  ...             NaN                 NaN          NaN         NaN
+4  BAR.NOED.2024.FE.ZS  Attainment  Barro-Lee: Percentage of female population age...  Percentage of female population age 20-24 with...  ...             NaN                 NaN          NaN         NaN
+
+[5 rows x 21 columns]
+2025-01-30 19:37:51,985 - src.missing_values - INFO - Analyse des valeurs manquantes commencée.
+2025-01-30 19:37:51,999 - src.missing_values - INFO - Résultats des valeurs manquantes sauvegardés dans : output/EdStatsSeries_missing_values.csv
+2025-01-30 19:37:52,000 - src.missing_values - INFO - Génération de la heatmap des valeurs manquantes dans : output/EdStatsSeries_missing_values_heatmap.png
+2025-01-30 19:37:52,851 - src.missing_values - INFO - Heatmap sauvegardée dans : output/EdStatsSeries_missing_values_heatmap.png
+2025-01-30 19:37:52,852 - src.missing_values - INFO - Analyse des valeurs manquantes terminée.
+2025-01-30 19:37:52,858 - utils_logger - INFO - [INFO] Rapport des valeurs manquantes pour EdStatsSeries :
+                               Colonnes  Nombre de valeurs manquantes  Pourcentage de valeurs manquantes (%)
+0                           Series Code                             0                               0.000000
+1                                 Topic                             0                               0.000000
+2                        Indicator Name                             0                               0.000000
+3                      Short definition                          1509                              41.173261
+4                       Long definition                             0                               0.000000
+5                       Unit of measure                          3665                             100.000000
+6                           Periodicity                          3566                              97.298772
+7                           Base Period                          3351                              91.432469
+8                           Other notes                          3113                              84.938608
+9                    Aggregation method                          3618                              98.717599
+10           Limitations and exceptions                          3651                              99.618008
+11           Notes from original source                          3665                             100.000000
+12                     General comments                          3651                              99.618008
+13                               Source                             0                               0.000000
+14  Statistical concept and methodology                          3642                              99.372442
+15                Development relevance                          3662                              99.918145
+16                 Related source links                          3450                              94.133697
+17                      Other web links                          3665                             100.000000
+18                   Related indicators                          3665                             100.000000
+19                         License Type                          3665                             100.000000
+20                          Unnamed: 20                          3665                             100.000000
+2025-01-30 19:37:52,861 - utils_logger - INFO - [INFO] Fin du traitement pour EdStatsSeries.
+
+2025-01-30 19:37:52,864 - utils_logger - INFO - 📌 [INFO] Versions des modules utilisés :
+2025-01-30 19:37:52,888 - utils_logger - INFO - [INFO] pandas : 2.2.2
+2025-01-30 19:37:52,889 - utils_logger - INFO - [INFO] seaborn : 0.13.2
+2025-01-30 19:37:52,890 - utils_logger - INFO - [INFO] matplotlib : 3.10.0
+2025-01-30 19:37:52,890 - main_logger - INFO - 🏁 Fin du programme.
