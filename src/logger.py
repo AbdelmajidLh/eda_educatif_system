@@ -1,10 +1,11 @@
 import logging
 import os
+import sys
 
 def setup_logger(name: str, log_file: str, level=logging.INFO) -> logging.Logger:
     """
     Configure un logger pour enregistrer les messages dans un fichier et la console.
-
+    
     Parameters:
         name (str): Nom du logger.
         log_file (str): Chemin vers le fichier de log.
@@ -13,25 +14,22 @@ def setup_logger(name: str, log_file: str, level=logging.INFO) -> logging.Logger
     Returns:
         logging.Logger: Logger configuré.
     """
-    # Crée le répertoire pour les logs s'il n'existe pas
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
-    # Configure le logger
     logger = logging.getLogger(name)
     logger.setLevel(level)
 
-    # Formatteur pour les logs
+    # Formatteur pour le logger
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-    # Handler pour le fichier
-    file_handler = logging.FileHandler(log_file)
+    # Handler pour fichier avec UTF-8
+    file_handler = logging.FileHandler(log_file, encoding="utf-8")
     file_handler.setFormatter(formatter)
 
-    # Handler pour la console
-    console_handler = logging.StreamHandler()
+    # Handler pour la console avec gestion d'encodage
+    console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setFormatter(formatter)
 
-    # Ajout des handlers au logger
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
 
