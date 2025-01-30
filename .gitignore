@@ -4,4 +4,4 @@ logs/
 __pycache__/
 output/
 data/*/*.zip
-data/raw/Ed*.csv
+data/raw/Ed*.csvdata/raw/*.csv
